@@ -6,6 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/login_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FAF6F6"
+        android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:inputType="textCapSentences"
+        android:paddingStart="70dp"
+        android:text="Log in using Phone Number"
+        android:textAlignment="viewStart"
+        android:textColor="#FFAB40"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="408dp"
@@ -55,10 +78,11 @@
         android:id="@+id/forgot_password_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:text="Forgot password?"
         android:textColor="#FF6E40"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+        app:layout_constraintTop_toBottomOf="@+id/login_phone" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
